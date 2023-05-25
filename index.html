@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+    <h1>Let the music play!</h1> <br>
+
+<!--<map name="image-map">
+    <area alt="tom2" title="tom2" href="" coords="431,149,76" shape="circle" data-sound="sounds/tom2.wav">
+    <area alt="tom3" title="tom3" href="" coords="181,330,76" shape="circle" data-sound="sounds/tom3.wav">
+    <area alt="tom4" title="tom4" href="" coords="522,331,77" shape="circle" data-sound="sounds/tom4.wav">
+    <area alt="tom1" title="tom1" href="" coords="266,149,76" shape="circle" data-sound="sounds/tom1.wav">
+    <area alt="crash" title="crash" href="" coords="630,80,56" shape="circle" data-sound ="sounds/crash.wav">
+    <area alt="hit-hat" title="hit-hat" href="" coords="68,82,54" shape="circle" data-sound="sounds/hit-hat.wav">
+    <area alt="bombo" title="bombo" href="" coords="120,191,55" shape="circle" data-sound="sounds/bombo.wav">
+    <area alt="redoblante" title="redoblante" href="" coords="578,192,54" shape="circle" data-sound="sounds/redoblante.wav">
+</map> -->
+
+    
+<div id="sound-container">
+    <audio id="myAudio"></audio>
+  
+    <img src="/images/Imagen de la batería.png" usemap="#myMap">
+  
+    <map name="myMap">
+      <area alt="tom1" coords="266,149,76" onclick="playSouns('/sounds/tom1.wav')">
+      <area alt="tom2" coords="431,149,76" onclick="playSound('/sounds/tom2.wav')">
+    </map>
+  </div>
+
+
+    
     
 </body>
 </html>

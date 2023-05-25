@@ -1,0 +1,23 @@
+/* styles.css */
+
+h1{
+  text-align: center;
+  color: palevioletred;
+}
+
+#dram {
+  text-align: center;
+}
+
+#sound-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#dram img {
+  max-width: 100%; 
+  height: auto; 
+
+}
