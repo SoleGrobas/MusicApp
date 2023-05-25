@@ -1,23 +1,24 @@
 /* styles.css */
-
 h1{
+  
   text-align: center;
   color: palevioletred;
 }
 
-#dram {
-  text-align: center;
-}
-
-#sound-container{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-#dram img {
-  max-width: 100%; 
-  height: auto; 
+#drum {
+  text-align: center;
+}
 
+#drum-img {
+  max-width: 100%;
+  height: auto;
 }
