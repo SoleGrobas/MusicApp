@@ -5,18 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="styles.css">
     
         
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div w3-include-html="./html/navBar.html"></div>
     <div w3-include-html="./html/body1.html"></div>
-    <div w3-include-html="./html/instrument.html"></div>
+  <div id="container">
+
+    <h1>Let the music play!</h1>
+
+    <div id="drum">
+      <audio id="tom1">
+        <source src="/sounds/tom1.wav" type="audio/wav">
+      </audio>
+      <audio id="tom2">
+        <source src="/sounds/tom2.wav" type="audio/wav">
+      </audio>
+      <audio id="tom3">
+        <source src="/sounds/tom3.wav" type="audio/wav">
+      </audio>
+      <audio id="tom4">
+        <source src="/sounds/tom4.wav" type="audio/wav">
+      </audio>
+      <audio id="crash">
+        <source src="/sounds/crash.wav" type="audio/wav">
+      </audio>
+      <audio id="hithat">
+        <source src="/sounds/hit-hat.wav" type="audio/wav">
+      </audio>
+      <audio id="bombo">
+        <source src="/sounds/bombo.wav" type="audio/wav">
+      </audio>
+      <audio id="redoblante">
+        <source src="/sounds/redoblante.wav" type="audio/wav">
+      </audio>
+
+    <img id="drum-img" src="/images/Imagen de la batería.png" usemap="#myMap">
+
+    <map name="myMap">
+      <area shape="circle" coords="266,149,76" onclick="playtom1()">
+      <area shape="circle" coords="431,149,76" onclick="playtom2()">
+      <area shape="circle" coords="181,330,76" onclick="playtom3()">
+      <area shape="circle" coords="522,331,77" onclick="playtom4()">
+      <area shape="circle" coords="630,80,56" onclick="playcrash()">
+      <area shape="circle" coords="68,82,54" onclick="playhithat()">
+      <area shape="circle" coords="120,191,55" onclick="playbombo()">
+      <area shape="circle" coords="578,192,54" onclick="playredoblante()">
+    </map>
+
+  </div>
+</div>
     <div w3-include-html="./html/body2.html"></div>
     <div w3-include-html="./html/footer.html"></div>
     <script src="index.js"></script>
     <script>includeHTML();</script>
-   
+
+
+    
+
 </body>
 </html>
