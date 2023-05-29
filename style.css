@@ -1,4 +1,5 @@
 
+@import url(./reset.css);
 *{
     box-sizing: border-box;
 }
@@ -10,11 +11,7 @@ body{
         
 }
 /* navBar*/
-@import url(./reset.css);
-* body{
-    font-family: 'Inter', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-}
+
 .header{
     position: fixed;
     width:100%;
@@ -32,7 +29,7 @@ body{
     margin-left: 2%;
     
 }
-.button{
+.jbutton{
     background-color: rgb(43, 81, 13);
     display: none;
     cursor: pointer;
@@ -46,9 +43,9 @@ body{
     
 }
 .nav{
-    
     display: none;
 }
+
 .ul{
     display: flex;
     flex-flow: row nowrap;
@@ -61,6 +58,7 @@ body{
     margin: 0.5em;
     color: white;
     text-decoration: none;
+    
   
 }
 
@@ -69,7 +67,9 @@ body{
 
 @media screen and (max-width:480px){
 
-.button{
+
+
+.jbutton{
     display: block;
     cursor: pointer;
 }
