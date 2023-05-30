@@ -14,8 +14,8 @@
 
 <body>
     <header class="header"> 
-        <img src="./Images/logo.png" class="logo" alt="foto logo">
-        <button class="jbutton">
+        <img src="./resources/images/logo.png" class="logo" alt="foto logo">
+        <button class="hamburguerButton">
             <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
@@ -46,31 +46,31 @@
             <div id="container">
                 <div id="drum">
                   <audio id="tom1">
-                    <source src="/sounds/tom1.wav" type="audio/wav">
+                    <source src="./resources/sounds/tom1.wav" type="audio/wav">
                   </audio>
                   <audio id="tom2">
-                    <source src="/sounds/tom2.wav" type="audio/wav">
+                    <source src="./resources/sounds/tom2.wav" type="audio/wav">
                   </audio>
                   <audio id="tom3">
-                    <source src="/sounds/tom3.wav" type="audio/wav">
+                    <source src="./resources/sounds/tom3.wav" type="audio/wav">
                   </audio>
                   <audio id="tom4">
-                    <source src="/sounds/tom4.wav" type="audio/wav">
+                    <source src="./resources/sounds/tom4.wav" type="audio/wav">
                   </audio>
                   <audio id="crash">
-                    <source src="/sounds/crash.wav" type="audio/wav">
+                    <source src="./resources/sounds/crash.wav" type="audio/wav">
                   </audio>
                   <audio id="hithat">
-                    <source src="/sounds/hit-hat.wav" type="audio/wav">
+                    <source src="./resources/sounds/hit-hat.wav" type="audio/wav">
                   </audio>
                   <audio id="bombo">
-                    <source src="/sounds/bombo.wav" type="audio/wav">
+                    <source src="./resources/sounds/bombo.wav" type="audio/wav">
                   </audio>
                   <audio id="redoblante">
-                    <source src="/sounds/redoblante.wav" type="audio/wav">
+                    <source src="./resources/sounds/redoblante.wav" type="audio/wav">
                   </audio>
             
-                <img id="drum-img" src="/images/Imagen de la batería.png" usemap="#myMap">
+                <img id="drum-img" src="./resources/images/Imagen de la batería.png" usemap="#myMap">
             
                 <map name="myMap">
                   <area shape="circle" coords="266,149,76" onclick="playtom1()">
@@ -78,7 +78,7 @@
                   <area shape="circle" coords="181,330,76" onclick="playtom3()">
                   <area shape="circle" coords="522,331,77" onclick="playtom4()">
                   <area shape="circle" coords="630,80,56" onclick="playcrash()">
-                  <area shape="circle" coords="68,82,54" onclick="playhithat()">
+                  <area shape="circle" coords="680,82,54" onclick="playhithat()">
                   <area shape="circle" coords="120,191,55" onclick="playbombo()">
                   <area shape="circle" coords="578,192,54" onclick="playredoblante()">
                 </map>
