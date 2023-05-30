@@ -6,7 +6,8 @@
 body{
     font-family: 'Inter', sans-serif;
     font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(#c08332, #FFFFFF);
+    background: linear-gradient(#c08332, #FFFFFF);
+    background-repeat: no-repeat;
         
 }
 /* navBar*/
