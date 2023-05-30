@@ -1,5 +1,4 @@
-
-@import url(./reset.css);
+@import url('./reset.css');
 *{
     box-sizing: border-box;
 }
@@ -7,22 +6,21 @@
 body{
     font-family: 'Inter', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(#c08332, #FFFFFF);
-  
+  background: linear-gradient(#c08332, #FFFFFF);
+        
 }
 /* navBar*/
 
 .header{
     position: fixed;
     width:100%;
-    padding: 1em;
-       
+    padding: 1em;  
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #C08332;
-
+    z-index: 3;
+  
 }
 .logo{
     width: 100px;
@@ -43,7 +41,8 @@ body{
     
 }
 .nav{
-    display: none;
+    display:none;
+    
 }
 
 .ul{
@@ -51,22 +50,23 @@ body{
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    
-    
+        
 }
+
+
+
+
 .li a{
     margin: 0.5em;
     color: white;
     text-decoration: none;
-    
-  
-}
+ }
 
 
 
 
 @media screen and (max-width:480px){
-
+    
 
 
 .jbutton{
@@ -81,7 +81,7 @@ body{
 
 .header .nav{
     width: 100%;
-    display: none;
+    display:none;
 }
 
 
@@ -94,11 +94,9 @@ body{
     flex-direction: column;
 }
 li{
+ 
     margin: 1rem 0;
 }
-
-
-
 
 }
     
@@ -107,14 +105,28 @@ li{
 section{
     color: white;
     width: 100%;
-    display: flex;
+    
 }
+body > main{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around;
+    padding: 10%;
+    
+}
+
+
+
+
 .div_welcome{
-    width: 40%;
+   
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content:space-around ;
+    align-items:center;
     padding-top: 4rem;
+    color: white;
    
 }
 
@@ -122,8 +134,8 @@ section{
     font-weight: bold;
     font-size: 3rem;
     align-self: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
+   /* margin-left: 2rem;
+    margin-right: 2rem;*/
 }
 
 .description{
@@ -149,12 +161,15 @@ section{
 .press:active{
     background-color: #333010;
 }
-img{
+#drum-img{
     
-    width: 50%;
+    width: 100%;
     height: auto;
-
+    margin-right: 0%;
+    padding-right: 0% ;
 }
+
+
 
 .Footer_text{
     display: flex;
