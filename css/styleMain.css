@@ -7,37 +7,38 @@ body > main{
     display: flex;
     flex-direction: row;   
     justify-content: space-around;
-    padding: 10%;
+    padding: 7%;
+    padding-bottom: 2%;
     
 }
 
-
-
-
-.div_welcome{
+.textWelcome{
    
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:space-around ;
     align-items:center;
-    padding-top: 4rem;
+    margin-top: 25%;
     color: white;
+    margin-bottom: 5%;
+    
    
 }
 
 .welcome{
+    font-size: 40px;
     font-weight: bold;
-    font-size: 3rem;
-    align-self: center;
-   /* margin-left: 2rem;
-    margin-right: 2rem;*/
+
+    
 }
 
-.description{
+   
+
+/*.description{
     align-self: center;
     font-size: 0,1rem;
-}
+}*/
 
 .press{
     background-color: #686230;
@@ -46,7 +47,7 @@ body > main{
     font-size: 0,9rem;
     color: #FFFFFF;
     padding: 15px;
-    width: 130px;
+    width: 150px;
     text-align: center;
     overflow: hidden;
     align-self: center;
@@ -64,3 +65,24 @@ body > main{
     margin-right: 0%;
     padding-right: 0% ;
 }
+
+@media screen and (max-width:480px) {
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.textWelcome{
+    justify-content: center;
+    
+}
+
+body > main{
+    
+    padding: 2%;
+   
+}
+
+}
+
