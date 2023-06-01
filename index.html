@@ -43,47 +43,47 @@
         </section>
    
         <section class="section2">
-            <div id="container">
-                <div id="drum">
-                  <audio id="tom1">
+          <div id="container">
+            <div id="drum">
+                <audio id="tom1">
                     <source src="./resources/sounds/tom1.wav" type="audio/wav">
-                  </audio>
-                  <audio id="tom2">
+                </audio>
+                <audio id="tom2">
                     <source src="./resources/sounds/tom2.wav" type="audio/wav">
-                  </audio>
-                  <audio id="tom3">
+                </audio>
+                <audio id="tom3">
                     <source src="./resources/sounds/tom3.wav" type="audio/wav">
-                  </audio>
-                  <audio id="tom4">
+                </audio>
+                <audio id="tom4">
                     <source src="./resources/sounds/tom4.wav" type="audio/wav">
-                  </audio>
-                  <audio id="crash">
+                </audio>
+                <audio id="crash">
                     <source src="./resources/sounds/crash.wav" type="audio/wav">
-                  </audio>
-                  <audio id="hithat">
+                </audio>
+                <audio id="hithat">
                     <source src="./resources/sounds/hit-hat.wav" type="audio/wav">
-                  </audio>
-                  <audio id="bombo">
+                </audio>
+                <audio id="bombo">
                     <source src="./resources/sounds/bombo.wav" type="audio/wav">
-                  </audio>
-                  <audio id="redoblante">
+                </audio>
+                <audio id="redoblante">
                     <source src="./resources/sounds/redoblante.wav" type="audio/wav">
-                  </audio>
-            
+                </audio>
+        
                 <img id="drum-img" src="./resources/images/Imagen de la batería.png" usemap="#myMap">
-            
+        
                 <map name="myMap">
-                  <area shape="circle" coords="266,149,76" onclick="playtom1()">
-                  <area shape="circle" coords="431,149,76" onclick="playtom2()">
-                  <area shape="circle" coords="181,330,76" onclick="playtom3()">
-                  <area shape="circle" coords="522,331,77" onclick="playtom4()">
-                  <area shape="circle" coords="630,80,56" onclick="playcrash()">
-                  <area shape="circle" coords="680,82,54" onclick="playhithat()">
-                  <area shape="circle" coords="120,191,55" onclick="playbombo()">
-                  <area shape="circle" coords="578,192,54" onclick="playredoblante()">
+                    <area shape="circle" coords="266,149,76" onclick="play('tom1')">
+                    <area shape="circle" coords="431,149,76" onclick="play('tom2')">
+                    <area shape="circle" coords="181,330,76" onclick="play('tom3')">
+                    <area shape="circle" coords="522,331,77" onclick="play('tom4')">
+                    <area shape="circle" coords="630,80,56" onclick="play('crash')">
+                    <area shape="circle" coords="680,82,54" onclick="play('hithat')">
+                    <area shape="circle" coords="120,191,55" onclick="play('bombo')">
+                    <area shape="circle" coords="578,192,54" onclick="play('redoblante')">
                 </map>
-                </div>
             </div>
+        </div>
         </section>
     </main>
     <footer>
@@ -98,5 +98,14 @@
   <script src= "index.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+  <script src="jquery.rwdImageMaps.min.js"></script>
+  <script>$('img[usemap]').rwdImageMaps();</script>
+  <script>$(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+        $('area').on('click', function() {
+            alert($(this).attr('alt') + ' clicked');
+        });
+    });
+  </script>
+</body>
 </html>
