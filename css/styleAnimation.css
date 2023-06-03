@@ -1,0 +1,18 @@
+#tom1AreaButton :hover {
+    width: 20px;
+    background-color: aqua;
+}
+.button-img {
+    background-color: aqua;
+  
+}
+#drum-div {
+    background-image: url(../resources/Images/Imagen\ de\ la\ batería.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#drum-div2 {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

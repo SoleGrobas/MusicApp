@@ -2,6 +2,7 @@
 @import url(./css/styleNavBar.css);
 @import url(./css/styleMain.css);
 @import url(./css/styleFooter.css);
+@import url(./css/styleAnimation.css);
 
 *{
     box-sizing: border-box;
@@ -14,6 +15,21 @@ body{
     background-repeat: no-repeat;
         
 }
+
+.animation {
+    animation-name: color-animation;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+  }
+
+  @keyframes color-animation {
+    from {
+      fill: red;
+    }
+    to {
+      fill: blue;
+    }
+  }
 
     
 

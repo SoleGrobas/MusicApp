@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicApp</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
@@ -44,7 +43,7 @@
    
         <section class="section2">
           <div id="container">
-            <div id="drum">
+            <div id="drum-div-audio">
                 <audio id="tom1">
                     <source src="./resources/sounds/tom1.wav" type="audio/wav">
                 </audio>
@@ -69,19 +68,18 @@
                 <audio id="redoblante">
                     <source src="./resources/sounds/redoblante.wav" type="audio/wav">
                 </audio>
-        
-                <img id="drum-img" src="./resources/images/Imagen de la batería.png" usemap="#myMap">
-        
-                <map name="myMap">
-                    <area shape="circle" coords="266,149,76" onclick="play('tom1')">
-                    <area shape="circle" coords="431,149,76" onclick="play('tom2')">
-                    <area shape="circle" coords="181,330,76" onclick="play('tom3')">
-                    <area shape="circle" coords="522,331,77" onclick="play('tom4')">
-                    <area shape="circle" coords="630,80,56" onclick="play('crash')">
-                    <area shape="circle" coords="680,82,54" onclick="play('hithat')">
-                    <area shape="circle" coords="120,191,55" onclick="play('bombo')">
-                    <area shape="circle" coords="578,192,54" onclick="play('redoblante')">
-                </map>
+            </div>
+            <div id="drum-div">   
+                <svg  width="100%" height="100%" viewBox="0 0 666 378" fill="./resources/Images/" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="tom1Area" cx="251" cy="140" r="69" fill="orange" onclick="play('tom1'); animation('tom1Area')"/>
+                    <circle id="tom2Aarea" cx="410" cy="140" r="69" fill="green" onclick="play('tom2'); animation('tom2Area')"/>
+                    <circle id="tom3Area" cx="171" cy="310" r="69" fill="yellow" onclick="play('tom3'); animation('tom3Area')"/>
+                    <circle id="tom4Area" cx="490" cy="310" r="69" fill="pink" onclick="play('tom4'); animation('tom4Area')"/>
+                    <circle id="crashArea" cx="596" cy="77" r="50" fill="grey" onclick="play('crash'); animation('crashArea')"/>
+                    <circle id="hithatArea" cx="114" cy="181" r="50" fill="aqua" onclick="play('hithat');animation('hithatArea')"/>
+                    <circle id="redoblanteArea" cx="64" cy="77" r="50" fill="purple" onclick="play('redoblante'); animation('redoblanteArea')"/>
+                    <circle id="bomboArea" cx="545" cy="181" r="50" fill="red" onclick="play('bombo'); animation('bomboArea')"/>
+                </svg>
             </div>
         </div>
         </section>
@@ -97,15 +95,7 @@
 
   <script src= "index.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="jquery.rwdImageMaps.min.js"></script>
-  <script>$('img[usemap]').rwdImageMaps();</script>
-  <script>$(document).ready(function(e) {
-        $('img[usemap]').rwdImageMaps();
-        $('area').on('click', function() {
-            alert($(this).attr('alt') + ' clicked');
-        });
-    });
-  </script>
+
+
 </body>
 </html>
