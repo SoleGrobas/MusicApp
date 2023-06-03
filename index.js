@@ -8,11 +8,11 @@ button.addEventListener('click',()=>{
 } )
 
 function play(id) {
-  var audio = document.getElementById(id);
- if (audio) { // transición de sonidos más "real"
-    audio.currentTime = 0;
-    audio.play(); 
-  }
+  let audio = document.getElementById(id);
+   if (audio) { // transición de sonidos más "real"
+      audio.currentTime = 0;
+      audio.play(); 
+   }
 }
 
 document.addEventListener('keydown', function(event) {
@@ -45,5 +45,14 @@ document.addEventListener('keydown', function(event) {
       break;
   }
 });
+
+function animateTom1() {
+  let tom1 = document.querySelector('.tom1-area'); //selecciono el elemento
+  if (tom1) {
+    tom1.classList.add('animation'); //
+  }
+}
+
+
 
 

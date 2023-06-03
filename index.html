@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicApp</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styleAnimation.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
@@ -74,8 +72,8 @@
                 <img id="drum-img" src="./resources/images/Imagen de la batería.png" usemap="#myMap">
         
                 <map name="myMap">
-                    <area id="tom1" shape="circle" coords="266,149,76" onclick="play('tom1')">
-                    <area id="tom2" shape="circle" coords="431,149,76" onclick="play('tom2')">
+                    <area class="tom1-area" shape="circle" coords="266,149,76" onclick="play('tom1')" onpointerover="animateTom1()">
+                    <area shape="circle" coords="431,149,76" onclick="play('tom2')">
                     <area shape="circle" coords="181,330,76" onclick="play('tom3')">
                     <area shape="circle" coords="522,331,77" onclick="play('tom4')">
                     <area shape="circle" coords="630,80,56" onclick="play('crash')">
@@ -98,7 +96,6 @@
 
   <script src= "index.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="jquery.rwdImageMaps.min.js"></script>
   <script>$('img[usemap]').rwdImageMaps();</script>
   <script>$(document).ready(function(e) {
