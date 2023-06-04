@@ -47,3 +47,9 @@ button.addEventListener('click', () => {
   nav.classList.toggle('show');
 });
 
+
+function myFunction() {
+  alert("If your using a mobile phone, for a best experience, rotate your mobile phone");
+}
+
+

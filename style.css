@@ -2,6 +2,8 @@
 @import url(./css/styleNavBar.css);
 @import url(./css/styleMain.css);
 @import url(./css/styleFooter.css);
+@import url(./css/styleDrumPage.css);
+
 
 *{
     box-sizing: border-box;

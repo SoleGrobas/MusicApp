@@ -1,0 +1,31 @@
+
+#drum_img--mobile {  
+    max-inline-size: 55%;
+    max-block-size: 55%;
+    align-self: center;
+}
+
+.section_image{
+align-items: center;
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: 25%;
+}
+
+.buttonPremium{
+    align-self: flex-end;
+    background-color: #686230;
+    border: none;
+    border-radius: 80px;
+    font-size: 13px;
+    color: #FFFFFF;
+    padding: 15px;
+    width: 140px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.linkPremium{
+    margin-left: 45%;
+  
+}
