@@ -11,10 +11,6 @@ width: -100%;
 margin-left: 5%;
 }
 
-#piano-div{
-    
-}
-
 .buttonPremiumPiano{
     background-color: #686230;
     border: none;
@@ -33,4 +29,7 @@ margin-left: 5%;
     padding: 2%;
     margin-left: 50%;
     
+}
+#piano-div {
+    width: 60%
 }

@@ -1,13 +1,16 @@
-#drum-div {
+#drum_img--mobile-svg {
     background-image: url(../resources/Images/Imagen\ de\ la\ batería.png);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
   /*PIANO*/
   #piano-div {
     background-image: url(../resources/Images/Piano\ Img.png);
-    background-repeat:no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
 } 
-.animation-piano {
+.animation-piano{
     animation-name: color-animation-piano;
     animation-duration: 0.5s;
     animation-delay: 0.1s;
@@ -21,3 +24,7 @@
       fill: grey;
     }
   }
+
+#drum_img--mobile{
+  padding-bottom: 10%;
+}

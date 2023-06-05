@@ -1,10 +1,22 @@
 function play(id) {
   let audio = document.getElementById(id);
- if (audio) {   // transición de sonidos más "real"
+ if (audio) {   //transición de sonidos más "real"
     audio.currentTime = 0;
     audio.play(); 
   }
 }
+
+function animation(areaId) {
+  let areaAnimation = document.getElementById(areaId);
+
+  areaAnimation.classList.add('animate__headShake');
+
+  setTimeout(function() {
+    
+    areaAnimation.classList.remove('animate__headShake');
+  }, 250);
+}
+
 document.addEventListener('keydown', function(event) {
   switch(event.key) {
     case 'a': //  tom1
@@ -30,25 +42,11 @@ document.addEventListener('keydown', function(event) {
       break;
     case 'k': // redoblante
       play('redoblante'); animation('redoblanteArea');
-      break;
-      
+      break; 
     default:
       break;
   }
 })
-
-function animation(areaId) {
-  let areaAnimation = document.getElementById(areaId);
-
-  areaAnimation.classList.add('animate__headShake');
-
-  setTimeout(function() {
-    
-    areaAnimation.classList.remove('animate__headShake');
-  }, 250);
-}
-
-
 
 //PIANO
 
@@ -59,6 +57,17 @@ function play(id) {
     audio.play(); 
   }
 }
+
+function animationPiano(areaId) {
+  let areaAnimationPiano = document.getElementById(areaId); //selecciono elemento
+  areaAnimationPiano.classList.add('animation-piano');
+
+  
+  setTimeout(function() {
+    areaAnimationPiano.classList.remove('animation-piano'); // quitar clase animation tras 1 seg
+    }, 300);
+}
+
 document.addEventListener('keydown', function(event) {
   switch(event.key) {
     case 'z': // piano1
@@ -87,18 +96,7 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-function animationPiano(areaId) {
-  let areaAnimationPiano = document.getElementById(areaId); //selecciono elemento
-  areaAnimationPiano.classList.add('animation-piano');
-
-  
-  setTimeout(function() {
-    areaAnimationPiano.classList.remove('animation-piano'); // quitar clase animation tras 1 seg
-    }, 300);
-}
-
 /* cuando hago CLICK en .button, .nav la añado o le quito= TOOGLE 'activo'*/
-
 
 const navToggle = document.querySelector(".nav-toggle")
 const nav = document.querySelector(".nav");
@@ -106,7 +104,6 @@ const nav = document.querySelector(".nav");
 navToggle.addEventListener('click', () => {
   nav.classList.toggle('nav-menu_show');
 });
-
 
 function myFunction() {
   alert("If your using a mobile phone, for a best experience, rotate your mobile phone");

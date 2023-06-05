@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MusicApp</title>
+      <link rel="stylesheet" href="../style.css" type="text/css">
+      <script src="https://kit.fontawesome.com/ba0a5b071a.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  <body>
+    <header>
+      <img src="../resources/images/logo.png" class="logo" alt="foto logo">
+    </header>
+    <main> 
+      <section class="section_image">
+            <div id="container">
+                <div class="drum-div-audio">
+                  <audio id="tom1">
+                    <source src="../resources/sounds/tom1.wav" type="audio/wav">
+                  </audio>
+                  <audio id="tom2">
+                    <source src="../resources/sounds/tom2.wav" type="audio/wav">
+                  </audio>
+                  <audio id="tom3">
+                    <source src="../resources/sounds/tom3.wav" type="audio/wav">
+                  </audio>
+                  <audio id="tom4">
+                    <source src="../resources/sounds/tom4.wav" type="audio/wav">
+                  </audio>
+                  <audio id="crash">
+                    <source src="../resources/sounds/crash.wav" type="audio/wav">
+                  </audio>
+                  <audio id="hithat">
+                    <source src="../resources/sounds/hit-hat.wav" type="audio/wav">
+                  </audio>
+                  <audio id="bombo">
+                    <source src="../resources/sounds/bombo.wav" type="audio/wav">
+                  </audio>
+                  <audio id="redoblante">
+                    <source src="../resources/sounds/redoblante.wav" type="audio/wav">
+                  </audio>
+                </div>
+                <div id="drum_img--mobile">   
+                  <svg  id="drum_img--mobile-svg" width="100%" height="100%" viewBox="0 0 666 460"  xmlns="http://www.w3.org/2000/svg">
+                      <circle id="tom1Area" class="animate__animated" cx="251" cy="140" r="69" fill="black" onclick="play('tom1'); animation('tom1Area')"/>
+                      <circle id="tom2Area" class="animate__animated" cx="410" cy="140" r="69" fill="black" onclick="play('tom2'); animation('tom2Area')"/>
+                      <circle id="tom3Area" class="animate__animated" cx="171" cy="310" r="69" fill="black" onclick="play('tom3'); animation('tom3Area')"/>
+                      <circle id="tom4Area" class="animate__animated" cx="490" cy="310" r="69" fill="black" onclick="play('tom4'); animation('tom4Area')"/>
+                      <circle id="crashArea" class="animate__animated" cx="596" cy="77" r="50" fill="black" onclick="play('crash'); animation('crashArea')"/>
+                      <circle id="hithatArea" class="animate__animated" cx="114" cy="181" r="50" fill="black" onclick="play('hithat');animation('hithatArea')"/>
+                      <circle id="redoblanteArea" class="animate__animated" cx="64" cy="77" r="50" fill="black" onclick="play('redoblante'); animation('redoblanteArea')"/>
+                      <circle id="bomboArea" class="animate__animated" cx="545" cy="181" r="50" fill="black" onclick="play('bombo'); animation('bomboArea')"/>
+                  </svg>
+                </div>
+      </section>
+      <section class="linkPremium">
+              <a href="./premium.html" target="_blank" onclick="myFunction()" class="buttonPremiumDrum">Try PREMIUM</a>
+              <a href="../index.html" target="_blank" class="buttonPremiumDrum">Home</a>
+      </section>
+    </main>
+    <script src= "../index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+  </body>
+</html>

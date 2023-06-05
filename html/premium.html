@@ -6,27 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicApp</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="../style.css" type="text/css">
     <script src="https://kit.fontawesome.com/ba0a5b071a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header"> 
-      <img src="./resources/images/Logo Premium.png" class="logoPremium" alt="foto logo">
+      <img src="../resources/images/Logo Premium.png" class="logoPremium" alt="foto logo">
       <button class="nav-toggle">
         <i class="fas fa-bars"></i>
       </button>
       <nav class="nav">  
         <ul class="nav-menu">
-          <li class="nav-menu-item"><a href="./index.html" class="nav-menu-link">Home</a></li>
+          <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link">Home</a></li>
           <li class="nav-menu-item"><a href="#" class="nav-menu-link">Help</a></li>
           <li class="nav-menu-item"><a href="#" class="nav-menu-link">Download</a></li>
           <li class="nav-menu-item"><a href="#" class="nav-menu-link">
             <div class="dropdown">
               <button class="dropbtn"> Instruments</button>
                   <div class="dropdown-content">
-                      <a href="./index.html">Drum</a>
+                      <a href="../index.html">Drum</a>
                       <a href="#">Piano</a>
                   </div>
             </div></a>
@@ -41,7 +41,7 @@
             <div class="textWelcome">
                 <p class="welcome">Music for everyone</p>
                 <p class="description">Millons of songs. No credit card needed.</p>
-                <a href="piano.html" onclick="myFunction()" class="press">Play the PIANO</a>
+                <a href="./piano.html" class="press"onclick="myFunction()" class="buttonPremiumPiano">Play the PIANO</a>
             </div>
         </section>
    
@@ -51,25 +51,25 @@
         <div id="container">
         <div id="piano-div-audio">
             <audio id="piano1">
-                <source src="./resources/sounds/piano1_1.wav" type="audio/wav">
+                <source src="../resources/sounds/piano1_1.wav" type="audio/wav">
             </audio>
             <audio id="piano2">
-                <source src="./resources/sounds/piano2_1.wav" type="audio/wav">
+                <source src="../resources/sounds/piano2_1.wav" type="audio/wav">
             </audio>
             <audio id="piano3">
-                <source src="./resources/sounds/piano3_1.wav" type="audio/wav">
+                <source src="../resources/sounds/piano3_1.wav" type="audio/wav">
             </audio>
             <audio id="piano4">
-                <source src="./resources/sounds/piano4_1.wav" type="audio/wav">
+                <source src="../resources/sounds/piano4_1.wav" type="audio/wav">
             </audio>
             <audio id="piano5">
-                <source src="./resources/sounds/piano5_1.wav" type="audio/wav">
+                <source src="../resources/sounds/piano5_1.wav" type="audio/wav">
             </audio>
             <audio id="piano6">
-                <source src="./resources/sounds/piano6_1.wav" type="audio/wav">
+                <source src="../resources/sounds/piano6_1.wav" type="audio/wav">
             </audio>
             <audio id="piano7">
-                <source src="./resources/sounds/piano7_1.wav" type="audio/wav">
+                <source src="../resources/sounds/piano7_1.wav" type="audio/wav">
             </audio>
         </div>
         <div id="piano-div"> 
@@ -95,7 +95,7 @@
         </div>
     </footer>
 
-  <script src= "index.js"></script>
+  <script src= "../index.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   
   </body>
