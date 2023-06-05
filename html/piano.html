@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicApp</title>
-    <link rel="stylesheet" href="../style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <img src="./resources/images/Logo Premium.png" class="logoPremium" alt="foto logo">
-  </header>
-  <main>
-           
-      
+        <link rel="stylesheet" href="../style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/ba0a5b071a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
+    <body>
+        <header>
+            <img src="../resources/images/Logo Premium.png" class="logoPremium" alt="foto logo">
+        </header>
+        <main>
             <section class="section_image">
               <div id="piano-div-audio">
                   <audio id="piano1">
@@ -42,8 +41,8 @@
                       <source src="./resources/sounds/piano7_1.wav" type="audio/wav">
                   </audio>
               </div>
-              <div id="piano-div"> 
-                  <svg width="100%" height="100%" viewBox="0 0 830 391" xmlns="http://www.w3.org/2000/svg">
+              <div> 
+                  <svg idpiano-div="" width="100%" height="100%" viewBox="0 0 830 391" xmlns="http://www.w3.org/2000/svg">
                       <path id="piano1Area" d="M75.5 2H1L2 376C9.2 388 23.6667 390 30 389.5H93C105.8 390.7 115 381 118 376V273H95C81.4 269.4 76.3333 260.5 75.5 256.5V2Z" stroke="black" fill= "white" onclick="play('piano1'); animationPiano('piano1Area')"/>
                       <path id="piano2Area" d="M195.5 2H161L160 256.5C160.4 265.3 149.167 270.833 143.5 272.5H120.5V374.5C123.3 386.5 138.667 389.167 146 389H215.5C231.5 385.8 235.833 378 236 374.5V272.5H213C199.8 267.3 195.833 259.667 195.5 256.5V2Z" stroke="black" fill= "white" onclick="play('piano2'); animationPiano('piano2Area')"/>
                       <path id="piano3Area" d="M355 2.5H280.5L280 255C277.6 267.4 266.667 271.833 261.5 272.5H238V374C242 385.6 258 389.5 265.5 390H327.5C345.1 390.4 353.167 379.5 355 374V2.5Z" stroke="black" fill= "white" onclick="play('piano3'); animationPiano('piano3Area')"/>
@@ -53,14 +52,15 @@
                       <path id="piano7Area" d="M829.5 2.5H755L754.5 255C752.1 267.4 741.167 271.833 736 272.5H712.5V374C716.5 385.6 732.5 389.5 740 390H802C819.6 390.4 827.667 379.5 829.5 374V2.5Z" stroke="black" fill= "white" onclick="play('piano7'); animationPiano('piano7Area')"/>
                   </svg>
               </div>
-          </section>   
-          <footer>
-          <div class="linkPremiumPiano">
-            <a href="../index.html" target="_blank" onclick="myFunction()" class="buttonPremium">Home</a>
+            </section>
+        </main>    
+        <footer>
+            <div class="linkPremiumPiano">
+                <a href="../index.html" target="_blank" onclick="myFunction()" class="buttonPremium">Home</a>
             </div>
-          </footer>
-  </main>   
-  <script src= "index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>        
-</body>
+        </footer>
+
+        <script src= "../index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>        
+    </body>
 </html>

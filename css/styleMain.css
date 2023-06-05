@@ -58,9 +58,12 @@ body > main{
     background-color: #333010;
 }
 
-#drum-img{  
+#drum-div{  
     width: 85%;
     height: auto;
+    background-image: url(../resources/Images/Imagen\ de\ la\ batería.png);
+    background-size: 100%;
+    background-repeat: no-repeat; 
 }
 
 @media screen and (max-width:480px) {
@@ -83,7 +86,7 @@ body > main{
     padding: 2%; 
 }
 
-#drum-img{   
+#drum-div{   
     width: 85%;
     height: auto;
     margin-top: 1%;
