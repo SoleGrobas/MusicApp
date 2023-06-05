@@ -2,20 +2,6 @@
     background-image: url(../resources/Images/Imagen\ de\ la\ batería.png);
     background-size: 100%;
 }
-.animation {
-    animation-name: color-animation;
-    animation-duration: 1s;
-    animation-delay: 0.1s;
-  }
-
-  @keyframes color-animation {
-    0% {
-      fill: black;
-    }
-    100% {
-      fill: white;
-    }
-} 
   /*PIANO*/
   #piano-div {
     background-image: url(../resources/Images/Piano\ Img.png);

@@ -36,15 +36,20 @@ document.addEventListener('keydown', function(event) {
       break;
   }
 })
-function animation(areaId) {
-  let areaAnimation = document.getElementById(areaId); //selecciono elemento
-  areaAnimation.classList.add('animation');
 
-  
+function animation(areaId) {
+  let areaAnimation = document.getElementById(areaId);
+
+  areaAnimation.classList.add('animate__headShake');
+
   setTimeout(function() {
-    areaAnimation.classList.remove('animation'); // quitar clase animation tras 1 seg
-    }, 250);
+    
+    areaAnimation.classList.remove('animate__headShake');
+  }, 250);
 }
+
+
+
 //PIANO
 
 function play(id) {
