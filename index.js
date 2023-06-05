@@ -40,11 +40,17 @@ function playredoblante() {
 
 /* cuando hago CLICK en .button, .nav la añado o le quito= TOOGLE 'activo'*/
 
-const button = document.querySelector('.button')
-const nav = document.querySelector('.nav')
 
-button.addEventListener('click',()=>{
-    nav.classList.toggle('activo')
-} )
+const navToggle = document.querySelector(".nav-toggle")
+const nav = document.querySelector(".nav");
+
+navToggle.addEventListener('click', () => {
+  nav.classList.toggle('nav-menu_show');
+});
+
+
+function myFunction() {
+  alert("If your using a mobile phone, for a best experience, rotate your mobile phone");
+}
 
 

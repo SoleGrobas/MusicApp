@@ -1,0 +1,36 @@
+.logo{
+    padding: 2%;
+}
+
+#piano_img--mobile {  
+    max-inline-size: 55%;
+    max-block-size: 55%;
+    align-self: center;
+}
+
+.section_image{
+align-items: center;
+margin-top: 1%;
+margin-bottom: 1%;
+margin-left: 25%;
+}
+
+.buttonPremium{
+    background-color: #686230;
+    border: none;
+    border-radius: 80px;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 1%;
+}
+
+.linkPremiumPiano{
+    padding: 2%;
+    margin-left: 50%;
+    
+}
