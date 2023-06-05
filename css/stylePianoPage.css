@@ -1,8 +1,11 @@
 .logo{
-    padding: 0%;
+    padding: 2%;
 
 }
-
+.logoPremium{
+    padding: 2%;
+    width: 20%;
+}
 
 
 .section_image{
@@ -30,6 +33,4 @@ margin-left: 5%;
     margin-left: 50%;
     
 }
-#piano-div {
-    width: 60%
-}
+

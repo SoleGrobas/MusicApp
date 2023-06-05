@@ -5,9 +5,11 @@
 }
   /*PIANO*/
   #piano-div {
+    width: 60%;
     background-image: url(../resources/Images/Piano\ Img.png);
-    background-size: 100%;
+    background-size: 85%;
     background-repeat: no-repeat;
+   
     
 } 
 .animation-piano{
