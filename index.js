@@ -93,7 +93,7 @@ function animationPiano(areaId) {
 
   
   setTimeout(function() {
-    areaAnimationPiano.classList.remove('animation-piano'); // quitar clase animation tras 1 seg
+    areaAnimationPiano.classList.remove('animation-piano'); // quitar clase animation tras x seg
     }, 300);
 }
 
