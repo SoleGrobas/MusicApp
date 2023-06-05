@@ -16,21 +16,6 @@ body{
         
 }
 
-.animation {
-    animation-name: color-animation;
-    animation-duration: 3s;
-    animation-delay: 0.2s;
-  }
-
-  @keyframes color-animation {
-    from {
-      fill: red;
-    }
-    to {
-      fill: blue;
-    }
-  }
-
     
 
 
