@@ -25,12 +25,18 @@ body > main{
 .welcome{
     font-size: 40px;
     font-weight: bold;   
+    margin-bottom: 3%;
 }
 
-/*.description{
+.description{
     align-self: center;
     font-size: 0,1rem;
-}*/
+    margin-bottom: 3%;
+}
+
+.section2{
+    padding-top: 8%;
+}
 
 .press{
     background-color: #686230;
@@ -38,8 +44,8 @@ body > main{
     border-radius: 80px;
     font-size: 0,9rem;
     color: #FFFFFF;
-    padding: 15px;
-    width: 150px;
+    padding: 10px;
+    width: 160px;
     text-align: center;
     overflow: hidden;
     align-self: center;
@@ -65,7 +71,12 @@ main{
 }
 
 .textWelcome{
-    justify-content: center;  
+    justify-content: center; 
+    margin-top: 15%; 
+}
+
+.welcome{
+    margin-top: 20%;
 }
 
 body > main{   
@@ -93,6 +104,6 @@ body > main{
     overflow: hidden;
     align-self: center;
     }
-    
+
 }
 

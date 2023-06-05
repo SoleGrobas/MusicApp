@@ -7,10 +7,22 @@
     color:#686230;
     font-family: 'Inter', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 0.8rem;
     padding-bottom: 2%;
+    font-weight: bold;
+    margin-bottom: 1%;
     
+}
+
+.Footer_text h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.Footer_text p{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin-bottom: 1%;
 }
 
 .button{
@@ -41,14 +53,26 @@
         font-size: 0.6rem;
     }
     
+    .Footer_text h3{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1%;
+    }
+    
+    .Footer_text p{
+        font-size: 0.8rem;
+        font-weight: lighter;
+        margin-bottom: 1%;
+    }
+
     .button{
         background-color: #686230;
         border: none;
         border-radius: 80px;
-        font-size: 0.6rem;
+        font-size: 15px;
         color: #FFFFFF;
-        padding: 15px;
-        width: 100px;
+        padding: 13px;
+        width: 125px;
         text-align: center;
         overflow: hidden;
     }

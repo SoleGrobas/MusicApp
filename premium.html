@@ -7,36 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicApp</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    
+    <script src="https://kit.fontawesome.com/ba0a5b071a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header"> 
-      
-    <img src="./resources/images/logo.png" class="logo" alt="foto logo">
-    
-      <nav>
-        <button class="my-button" id="my-button">
-              <i class="fas fa-bars"></i>
-          </button>
-              <ul id="mynav">
-                  <li><a href="#">Premium</a></li>
-                  <li><a href="#">Help</a></li>
-                  <li><a href="#">Download</a></li>
-                  <li><a href="#">Instruments</a></li>
-                  <li><a href="#">Log in</a></li>
-              </ul>
-          </nav>
-    </header>
+      <img src="./resources/images/logo.png" class="logo" alt="foto logo">
+      <button class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav">  
+        <ul class="nav-menu">
+          <li class="nav-menu-item"><a href="./index.html" class="nav-menu-link">Home</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Help</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Download</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">
+            <div class="dropdown">
+              <button class="dropbtn"> Instruments</button>
+                  <div class="dropdown-content">
+                      <a href="./index.html">Drum</a>
+                      <a href="#">Piano</a>
+                  </div>
+            </div></a>
+          </li>       
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Log in</a></li>
+        </ul>
+    </nav>
+  </header>
 
-    <main>
-        
-        <section class="section1">
+  <main>
+    <section class="section1">
             <div class="textWelcome">
                 <p class="welcome">Music for everyone</p>
                 <p class="description">Millons of songs. No credit card needed.</p>
-                <button class="press">Press the DRUM</button>
+                <button class="press">Play the PIANO</button>
             </div>
         </section>
    
@@ -68,7 +73,7 @@
                     <source src="./resources/sounds/redoblante.wav" type="audio/wav">
                   </audio>
             
-                <img id="drum-img" src="resources\Images\Piano Img.png" usemap="#myMap">
+                <img id="drum-img" src="./resources/images/Piano Img.png" usemap="#myMap">
             
                 <map name="myMap">
                   <area shape="circle" coords="266,149,76" onclick="playtom1()">
@@ -88,7 +93,7 @@
         <div class="Footer_text">
             <h3>Try Premium free for 1 month</h3>
             <p>Play millions of songs ad-free, on-demand, and offline.</p>
-            <button class="button">Try PREMIUM</button>
+            <button class="button">See pricing</button>
             </div>
         </div>
     </footer>
