@@ -1,6 +1,6 @@
 function play(id) {
   let audio = document.getElementById(id);
- if (audio) {   // transición de sonidos más "real"
+ if (audio) {   //transición de sonidos más "real"
     audio.currentTime = 0;
     audio.play(); 
   }
@@ -40,7 +40,7 @@ document.addEventListener('keydown', function(event) {
 function animation(areaId) {
   let areaAnimation = document.getElementById(areaId);
 
-  areaAnimation.classList.add('animate__headShake');
+  areaAnimation.classList.add('animate');
 
   setTimeout(function() {
     
