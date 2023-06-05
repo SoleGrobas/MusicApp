@@ -4,12 +4,7 @@
     background-repeat: no-repeat;
 }
   /*PIANO*/
-  #piano-div {
-    background-image: url(../resources/Images/Piano\ Img.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    
-} 
+
 .animation-piano{
     animation-name: color-animation-piano;
     animation-duration: 0.5s;
