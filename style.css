@@ -15,18 +15,3 @@ body{
     background-repeat: no-repeat;
         
 }
-
-.animation {
-    animation-name: color-animation;
-    animation-duration: 1s;
-    animation-delay: 0.2s;
-  }
-  
-  @keyframes color-animation {
-    from {
-      background-color: red;
-    }
-    to {
-      background-color: blue;
-    }
-  }
