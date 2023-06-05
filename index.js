@@ -1,6 +1,6 @@
 function play(id) {
   let audio = document.getElementById(id);
- if (audio) {   //transición de sonidos más "real"
+ if (audio) {   
     audio.currentTime = 0;
     audio.play(); 
   }
@@ -19,28 +19,28 @@ function animation(areaId) {
 
 document.addEventListener('keydown', function(event) {
   switch(event.key) {
-    case 'a': //  tom1
+    case 'a': 
       play('tom1'); animation('tom1Area');
       break;
-    case 's': // tom2
+    case 's': 
       play('tom2'); animation('tom2Area');
       break;
-    case 'd': // tom3
+    case 'd': 
       play('tom3'); animation('tom3Area');
       break;
-    case 'f': // tom4
+    case 'f': 
       play('tom4'); animation('tom4Area');
       break;
-    case 'g': // crash
+    case 'g':
       play('crash'); animation('crashArea');
       break;
-    case 'h': // hit-hat
+    case 'h':
       play('hithat'); animation('hithatArea');
       break;
-    case 'j': // bombo
+    case 'j': 
       play('bombo'); animation('bomboArea');
       break;
-    case 'k': // redoblante
+    case 'k': 
       play('redoblante'); animation('redoblanteArea');
       break; 
     default:
@@ -52,43 +52,43 @@ document.addEventListener('keydown', function(event) {
 
 function play(id) {
   let audio = document.getElementById(id);
- if (audio) {   // transición de sonidos más "real"
+ if (audio) {   
     audio.currentTime = 0;
     audio.play(); 
   }
 }
 
 function animationPiano(areaId) {
-  let areaAnimationPiano = document.getElementById(areaId); //selecciono elemento
+  let areaAnimationPiano = document.getElementById(areaId); 
   areaAnimationPiano.classList.add('animation-piano');
 
   
   setTimeout(function() {
-    areaAnimationPiano.classList.remove('animation-piano'); // quitar clase animation tras 1 seg
+    areaAnimationPiano.classList.remove('animation-piano'); 
     }, 300);
 }
 
 document.addEventListener('keydown', function(event) {
   switch(event.key) {
-    case 'z': // piano1
+    case 'z': 
       play('piano1'); animationPiano('piano1Area');
       break;
-    case 'x': // piano2
+    case 'x': 
       play('piano2'); animationPiano('piano2Area');
       break;
-    case 'c': // piano3
+    case 'c': 
       play('piano3'); animationPiano('piano3Area');
       break;
-    case 'v': // piano4
+    case 'v': 
       play('piano4'); animationPiano('piano4Area');
       break;
-    case 'b': // piano5
+    case 'b': 
       play('piano5'); animationPiano('piano5Area');
       break;
-    case 'n': // piano7
+    case 'n': 
       play('piano6'); animationPiano('piano6Area');
       break;
-    case 'm': // piano6
+    case 'm': 
       play('piano7'); animationPiano('piano7Area');
       break;
     default:
@@ -96,7 +96,7 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-/* cuando hago CLICK en .button, .nav la añado o le quito= TOOGLE 'activo'*/
+
 
 const navToggle = document.querySelector(".nav-toggle")
 const nav = document.querySelector(".nav");
@@ -104,6 +104,8 @@ const nav = document.querySelector(".nav");
 navToggle.addEventListener('click', () => {
   nav.classList.toggle('nav-menu_show');
 });
+
+
 
 function myFunction() {
   alert("If your using a mobile phone, for a best experience, rotate your mobile phone");
