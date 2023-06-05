@@ -34,10 +34,9 @@ body > main{
     margin-bottom: 3%;
 }
 
-/*.description{
-    align-self: center;
-    font-size: 0,1rem;
-}*/
+.section2{
+    padding-top: 8%;
+}
 
 .press{
     background-color: #686230;
@@ -72,7 +71,12 @@ main{
 }
 
 .textWelcome{
-    justify-content: center;  
+    justify-content: center; 
+    margin-top: 15%; 
+}
+
+.welcome{
+    margin-top: 20%;
 }
 
 body > main{   
@@ -100,6 +104,6 @@ body > main{
     overflow: hidden;
     align-self: center;
     }
-    
+
 }
 

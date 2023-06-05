@@ -102,8 +102,8 @@ z-index: 1;
 @media screen and (max-width: 480px) {
 
 .logo{
-    width: 30%;
-    height: 30px;
+    width: 50%;
+    height: 50%;
    
 }
 
@@ -122,7 +122,7 @@ z-index: 1;
 }
 
 .nav-menu-item{
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .nav-toggle {
@@ -134,6 +134,10 @@ z-index: 1;
 .nav-menu_show {
     left: 50%;
 
+}
+
+.dropdown .dropbtn{
+  font-size: 15px;
 }
 
 }
