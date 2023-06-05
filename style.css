@@ -4,6 +4,7 @@
 @import url(./css/styleFooter.css);
 @import url(./css/styleDrumPage.css);
 @import url(./css/stylePianoPage.css);
+@import url(./css/styleAnimation.css);
 
 *{
     box-sizing: border-box;
