@@ -25,6 +25,13 @@ body > main{
 .welcome{
     font-size: 40px;
     font-weight: bold;   
+    margin-bottom: 3%;
+}
+
+.description{
+    align-self: center;
+    font-size: 0,1rem;
+    margin-bottom: 3%;
 }
 
 /*.description{
@@ -38,8 +45,8 @@ body > main{
     border-radius: 80px;
     font-size: 0,9rem;
     color: #FFFFFF;
-    padding: 15px;
-    width: 150px;
+    padding: 10px;
+    width: 160px;
     text-align: center;
     overflow: hidden;
     align-self: center;
