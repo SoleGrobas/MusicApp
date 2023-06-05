@@ -76,10 +76,10 @@ document.addEventListener('keydown', function(event) {
     case 'b': // piano5
       play('piano5'); animationPiano('piano5Area');
       break;
-    case 'm': // piano6
+    case 'n': // piano7
       play('piano6'); animationPiano('piano6Area');
       break;
-    case 'n': // piano7
+    case 'm': // piano6
       play('piano7'); animationPiano('piano7Area');
       break;
     default:
