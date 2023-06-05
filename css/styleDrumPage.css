@@ -3,9 +3,12 @@
 }
 
 #drum_img--mobile {  
-    max-inline-size: 45%;
-    max-block-size: 45%;
+    width: 100%;
     align-self: center;
+    
+}
+#drum_img--mobile-svg {
+    width: 100%;
 }
 
 .section_image{
